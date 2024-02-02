@@ -1,0 +1,153 @@
+[0m13:50:11.978007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f344a3c6e60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f34487ca710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f34487ca6b0>]}
+
+
+============================== 13:50:12.050154 | 5727d75a-7fd3-4721-8dad-fd9382bcbb67 ==============================
+[0m13:50:12.050154 [info ] [MainThread]: Running with dbt=1.7.7
+[0m13:50:12.052018 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/home/edavis67/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init jaffle_shop', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:50:12.054085 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/edavis67/.dbt')}
+[0m13:50:12.055796 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m13:50:12.072825 [debug] [MainThread]: Starter project path: /mnt/c/Users/edavis67/OneDrive - DXC Production/python/dbt/.venv/lib/python3.10/site-packages/dbt/include/starter_project
+[0m13:50:12.424421 [info ] [MainThread]: 
+Your new dbt project "jaffle_shop" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:50:12.426330 [info ] [MainThread]: Setting up your profile.
+[0m13:50:25.142789 [error] [MainThread]: Encountered an error:
+
+[0m13:50:25.165771 [error] [MainThread]: Traceback (most recent call last):
+  File "/mnt/c/Users/edavis67/OneDrive - DXC Production/python/dbt/.venv/lib/python3.10/site-packages/dbt/cli/requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/mnt/c/Users/edavis67/OneDrive - DXC Production/python/dbt/.venv/lib/python3.10/site-packages/dbt/cli/requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/edavis67/OneDrive - DXC Production/python/dbt/.venv/lib/python3.10/site-packages/dbt/cli/main.py", line 515, in init
+    results = task.run()
+  File "/mnt/c/Users/edavis67/OneDrive - DXC Production/python/dbt/.venv/lib/python3.10/site-packages/dbt/task/init.py", line 344, in run
+    self.setup_profile(profile_name)
+  File "/mnt/c/Users/edavis67/OneDrive - DXC Production/python/dbt/.venv/lib/python3.10/site-packages/dbt/task/init.py", line 263, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+  File "/mnt/c/Users/edavis67/OneDrive - DXC Production/python/dbt/.venv/lib/python3.10/site-packages/dbt/task/init.py", line 244, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+  File "/mnt/c/Users/edavis67/OneDrive - DXC Production/python/dbt/.venv/lib/python3.10/site-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "/mnt/c/Users/edavis67/OneDrive - DXC Production/python/dbt/.venv/lib/python3.10/site-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m13:50:25.170422 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 13.199229, "process_user_time": 2.192144, "process_kernel_time": 0.523349, "process_mem_max_rss": "96428", "process_in_blocks": "5872", "command_success": false, "process_out_blocks": "0"}
+[0m13:50:25.172808 [debug] [MainThread]: Command `dbt init` failed at 13:50:25.172560 after 13.20 seconds
+[0m13:50:25.175835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f344a3c6e60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3448698820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3448698a00>]}
+[0m13:50:25.177777 [debug] [MainThread]: Flushing usage events
+[0m13:51:21.222314 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb296d46200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb294f9e680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb294f9e620>]}
+
+
+============================== 13:51:21.230807 | e7c3bcd2-8972-43ff-b25b-fae673b4e0d3 ==============================
+[0m13:51:21.230807 [info ] [MainThread]: Running with dbt=1.7.7
+[0m13:51:21.232240 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/edavis67/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init jaffle_shop', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:51:21.252357 [info ] [MainThread]: A project called jaffle_shop already exists here.
+[0m13:51:21.255563 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.0383567, "process_user_time": 2.106114, "process_kernel_time": 0.474908, "process_mem_max_rss": "88948", "process_in_blocks": "5832", "process_out_blocks": "0"}
+[0m13:51:21.256876 [debug] [MainThread]: Command `dbt init` succeeded at 13:51:21.256708 after 0.04 seconds
+[0m13:51:21.258162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb296d46200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb298e2dea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb294f9e6e0>]}
+[0m13:51:21.260162 [debug] [MainThread]: Flushing usage events
+[0m13:51:51.583342 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f78f3b4ed10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f78f1db2740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f78f1db26e0>]}
+
+
+============================== 13:51:51.591850 | c3bba61c-69db-4cc8-ba58-fd228f744c29 ==============================
+[0m13:51:51.591850 [info ] [MainThread]: Running with dbt=1.7.7
+[0m13:51:51.593364 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/home/edavis67/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init jaffle_shop', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:51:51.611991 [debug] [MainThread]: Starter project path: /mnt/c/Users/edavis67/OneDrive - DXC Production/python/dbt/.venv/lib/python3.10/site-packages/dbt/include/starter_project
+[0m13:51:51.895819 [info ] [MainThread]: 
+Your new dbt project "jaffle_shop" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:51:51.897337 [info ] [MainThread]: Setting up your profile.
+[0m13:59:26.038153 [info ] [MainThread]: Profile jaffle_shop written to /home/edavis67/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m13:59:26.044752 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 454.4664, "process_user_time": 3.513365, "process_kernel_time": 2.134573, "process_mem_max_rss": "181436", "process_in_blocks": "85320", "process_out_blocks": "8"}
+[0m13:59:26.047316 [debug] [MainThread]: Command `dbt init` succeeded at 13:59:26.046974 after 454.47 seconds
+[0m13:59:26.049517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f78f3b4ed10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f78f1db2a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f78c8ac6800>]}
+[0m13:59:26.052024 [debug] [MainThread]: Flushing usage events
+[0m14:00:25.860037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1efbbf6d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ef9e973a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ef9e97af0>]}
+
+
+============================== 14:00:25.879079 | f7dec998-29c9-40c6-b482-a728f52b5ed3 ==============================
+[0m14:00:25.879079 [info ] [MainThread]: Running with dbt=1.7.7
+[0m14:00:25.880427 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/edavis67/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:00:25.882904 [info ] [MainThread]: dbt version: 1.7.7
+[0m14:00:25.884969 [info ] [MainThread]: python version: 3.10.12
+[0m14:00:25.886758 [info ] [MainThread]: python path: /mnt/c/Users/edavis67/OneDrive - DXC Production/python/dbt/.venv/bin/python
+[0m14:00:25.888128 [info ] [MainThread]: os info: Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m14:00:37.018584 [info ] [MainThread]: Using profiles dir at /home/edavis67/.dbt
+[0m14:00:37.020382 [info ] [MainThread]: Using profiles.yml file at /home/edavis67/.dbt/profiles.yml
+[0m14:00:37.022412 [info ] [MainThread]: Using dbt_project.yml file at /mnt/c/Users/edavis67/OneDrive - DXC Production/python/dbt/dbt-tutorial/dbt_project.yml
+[0m14:00:37.065580 [info ] [MainThread]: adapter type: bigquery
+[0m14:00:37.067272 [info ] [MainThread]: adapter version: 1.7.4
+[0m14:00:37.069689 [info ] [MainThread]: Configuration:
+[0m14:00:37.071576 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:00:37.073656 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m14:00:37.075871 [info ] [MainThread]: Required dependencies:
+[0m14:00:37.078186 [debug] [MainThread]: Executing "git --help"
+[0m14:00:37.083190 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:00:37.084789 [debug] [MainThread]: STDERR: "b''"
+[0m14:00:37.086211 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:00:37.087969 [info ] [MainThread]: Connection:
+[0m14:00:37.091062 [info ] [MainThread]:   method: service-account
+[0m14:00:37.093515 [info ] [MainThread]:   database: sec-logs
+[0m14:00:37.095578 [info ] [MainThread]:   execution_project: sec-logs
+[0m14:00:37.097875 [info ] [MainThread]:   schema: None
+[0m14:00:37.099638 [info ] [MainThread]:   location: US
+[0m14:00:37.101233 [info ] [MainThread]:   priority: interactive
+[0m14:00:37.102777 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m14:00:37.104146 [info ] [MainThread]:   impersonate_service_account: None
+[0m14:00:37.105930 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m14:00:37.108901 [info ] [MainThread]:   job_retries: 1
+[0m14:00:37.111000 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m14:00:37.112761 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m14:00:37.114606 [info ] [MainThread]:   keyfile: ../sec-logs-b8ca162278c4.json
+[0m14:00:37.116364 [info ] [MainThread]:   timeout_seconds: 300
+[0m14:00:37.118289 [info ] [MainThread]:   refresh_token: None
+[0m14:00:37.120136 [info ] [MainThread]:   client_id: None
+[0m14:00:37.121645 [info ] [MainThread]:   token_uri: None
+[0m14:00:37.123119 [info ] [MainThread]:   dataproc_region: None
+[0m14:00:37.125295 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m14:00:37.126606 [info ] [MainThread]:   gcs_bucket: None
+[0m14:00:37.128015 [info ] [MainThread]:   dataproc_batch: None
+[0m14:00:37.131316 [info ] [MainThread]: Registered adapter: bigquery=1.7.4
+[0m14:00:37.134764 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m14:00:37.136874 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:00:37.144918 [debug] [MainThread]: On debug: select 1 as id
+[0m14:00:38.521723 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=sec-logs&j=bq:US:15154712-3b19-40c8-a3c6-88d79d75faab&page=queryresults
+[0m14:00:39.048386 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:00:39.050293 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:00:39.051896 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </mnt/c/Users/edavis67/OneDrive - DXC Production/python/dbt/dbt-tutorial/dbt_project.yml> not found
+
+[0m14:00:39.057278 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 13.251869, "process_user_time": 3.569966, "process_kernel_time": 1.883011, "process_mem_max_rss": "185176", "process_in_blocks": "84264", "process_out_blocks": "8", "command_success": false}
+[0m14:00:39.059410 [debug] [MainThread]: Command `dbt debug` failed at 14:00:39.059215 after 13.25 seconds
+[0m14:00:39.060869 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:00:39.062294 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1efbbf6d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ef9e97af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ed094eda0>]}
+[0m14:00:39.063765 [debug] [MainThread]: Flushing usage events
